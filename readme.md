@@ -1,6 +1,3 @@
-Berikut adalah versi terbaru dari `README.md` yang sudah diperbaiki sesuai permintaan:
-
-````markdown
 # Multi-App Git Pull Automation Script
 
 This repository provides a step-by-step guide to automate the process of updating multiple applications simultaneously using a Bash script. This is particularly useful when managing multiple instances of the same application running on different ports or directories.
@@ -153,7 +150,6 @@ Change the permissions of the script to make it executable.
 ```bash
 chmod +x update_apps.sh
 ```
-````
 
 ## Step 4: Run the Update Script
 
