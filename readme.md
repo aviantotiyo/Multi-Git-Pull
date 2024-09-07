@@ -31,6 +31,39 @@ Before proceeding, ensure you have the following:
 - **Git Installed** on PC2.
 - **Bash Shell** available on PC2.
 - **Repository Access** to `https://github.com/aviantotiyo/example.git`.
+- **SSH Key Configured** for GitHub on PC2. See the note below for setting up SSH keys to avoid having to manually enter a token when running `git pull`.
+
+> **Note:** In order to avoid manually entering your GitHub token during the `git pull` process, make sure you've set up SSH key authentication for GitHub. Follow these steps to set it up:
+
+1. **Generate SSH Key** (if not already generated):
+
+   ```bash
+   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+   ```
+
+   Press `Enter` to accept the default file location.
+
+2. **Add SSH Key to GitHub**:
+
+   Copy your public SSH key to your clipboard:
+
+   ```bash
+   cat ~/.ssh/id_rsa.pub
+   ```
+
+   Then, add it to your GitHub account under **Settings > SSH and GPG keys**.
+
+3. **Verify the SSH Connection**:
+
+   Test your connection to GitHub:
+
+   ```bash
+   ssh -T git@github.com
+   ```
+
+   You should see a success message if everything is set up correctly.
+
+By setting up SSH, you won't need to manually enter a token when pulling from GitHub repositories.
 
 ## Directory Structure
 
@@ -65,16 +98,16 @@ First, ensure that each application directory (`app1` to `app4`) is cloned from 
    cd /var/www
 
    # Clone the repository for App 1
-   git clone -b production https://github.com/aviantotiyo/example.git app1
+   git clone -b production git@github.com:aviantotiyo/example.git app1
 
    # Clone the repository for App 2
-   git clone -b production https://github.com/aviantotiyo/example.git app2
+   git clone -b production git@github.com:aviantotiyo/example.git app2
 
    # Clone the repository for App 3
-   git clone -b production https://github.com/aviantotiyo/example.git app3
+   git clone -b production git@github.com:aviantotiyo/example.git app3
 
    # Clone the repository for App 4
-   git clone -b production https://github.com/aviantotiyo/example.git app4
+   git clone -b production git@github.com:aviantotiyo/example.git app4
    ```
 
 > **Note:** The repository is cloned using the `production` branch. If the directories `app1` to `app4` already exist and contain the repository, you can skip this step.
@@ -261,5 +294,4 @@ script checks for conflicts before pulling. If conflicts arise, manual intervent
 
 ```
 
-Penyesuaian pada README ini memperbaiki contoh lokasi repository dengan branch `production` dan menghilangkan subheadline "License" yang sebelumnya tidak diperlukan.
 ```
