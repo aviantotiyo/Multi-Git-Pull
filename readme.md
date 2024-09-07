@@ -23,7 +23,7 @@ Before proceeding, ensure you have the following:
 - **SSH Access** to PC2.
 - **Git Installed** on PC2.
 - **Bash Shell** available on PC2.
-- **Repository Access** to `https://github.com/aviantotiyo/autumn.git`.
+- **Repository Access** to `https://github.com/aviantotiyo/example.git`.
 
 ## Directory Structure
 
@@ -58,16 +58,16 @@ First, ensure that each application directory (`app1` to `app4`) is cloned from 
    cd /var/www
 
    # Clone the repository for App 1
-   git clone -b production https://github.com/aviantotiyo/autumn.git app1
+   git clone -b production https://github.com/aviantotiyo/example.git app1
 
    # Clone the repository for App 2
-   git clone -b production https://github.com/aviantotiyo/autumn.git app2
+   git clone -b production https://github.com/aviantotiyo/example.git app2
 
    # Clone the repository for App 3
-   git clone -b production https://github.com/aviantotiyo/autumn.git app3
+   git clone -b production https://github.com/aviantotiyo/example.git app3
 
    # Clone the repository for App 4
-   git clone -b production https://github.com/aviantotiyo/autumn.git app4
+   git clone -b production https://github.com/aviantotiyo/example.git app4
    ```
 
 > **Note:** The repository is cloned using the `production` branch. If the directories `app1` to `app4` already exist and contain the repository, you can skip this step.
