@@ -20,7 +20,6 @@ Ultimately, the choice of CI/CD tools depends on the specific needs of the proje
 - [Step 4: Run the Update Script](#step-4-run-the-update-script)
 - [Step 5: Verify the Update](#step-5-verify-the-update)
 - [Optional: Automate with Cron Job](#optional-automate-with-cron-job)
-- [CI/CD Alternative Explanation](#cicd-alternative-explanation)
 - [Troubleshooting](#troubleshooting)
 
 ## Prerequisites
