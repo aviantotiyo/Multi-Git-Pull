@@ -2,6 +2,14 @@
 
 This repository provides a step-by-step guide to automate the process of updating multiple applications simultaneously using a Bash script. This is particularly useful when managing multiple instances of the same application running on different ports or directories.
 
+## CI/CD Alternative Explanation
+
+This method can be considered as a simple alternative to Continuous Integration/Continuous Deployment (CI/CD) tools such as GitHub Actions or GitLab CI/CD.
+
+Unlike full-fledged CI/CD platforms that offer extensive pipelines, testing, and deployment processes, this Bash script provides a lightweight solution for developers who need to automate basic Git pull tasks across multiple applications. While it lacks the robustness and flexibility of more advanced CI/CD solutions, it can be a suitable choice for smaller projects or when minimal automation is required.
+
+Ultimately, the choice of CI/CD tools depends on the specific needs of the project and the developer's preferences. For more complex and scalable projects, platforms like GitHub Actions, GitLab CI/CD, or Jenkins might be more appropriate. However, for a straightforward update process, this script offers a practical alternative.
+
 ## Table of Contents
 
 - [Prerequisites](#prerequisites)
@@ -231,14 +239,6 @@ To automate the update process at regular intervals, set up a cron job.
 3. **Save and Exit** the crontab editor.
 
 > **Note:** Adjust the schedule and script path (`/home/user/update_apps.sh`) as needed.
-
-## CI/CD Alternative Explanation
-
-This method can be considered as a simple alternative to Continuous Integration/Continuous Deployment (CI/CD) tools such as GitHub Actions or GitLab CI/CD.
-
-Unlike full-fledged CI/CD platforms that offer extensive pipelines, testing, and deployment processes, this Bash script provides a lightweight solution for developers who need to automate basic Git pull tasks across multiple applications. While it lacks the robustness and flexibility of more advanced CI/CD solutions, it can be a suitable choice for smaller projects or when minimal automation is required.
-
-Ultimately, the choice of CI/CD tools depends on the specific needs of the project and the developer's preferences. For more complex and scalable projects, platforms like GitHub Actions, GitLab CI/CD, or Jenkins might be more appropriate. However, for a straightforward update process, this script offers a practical alternative.
 
 ## Troubleshooting
 
