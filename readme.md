@@ -285,9 +285,8 @@ To automate the update process at regular intervals, set up a cron job.
   - If using HTTPS, ensure that credentials are cached or use a credential manager.
 
 - **Conflicts During Git Pull**:
-  - The
 
-script checks for conflicts before pulling. If conflicts arise, manual intervention may be required.
+  - The script checks for conflicts before pulling. If conflicts arise, manual intervention may be required.
 
 - **Debugging the Script**:
   - Use `bash -x ./update_apps.sh` to run the script in debug mode and identify any issues.
